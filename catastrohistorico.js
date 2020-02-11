@@ -217,7 +217,7 @@
 				transparent: true,
 				format: 'image/png',
 				srs: 4326,
-				minZoom: 12,
+				minZoom: 14,
 				maxZoom: 21,
 				tiled: false,	
 				//tileSize: 512
@@ -242,7 +242,7 @@
 				transparent: true,
 				format: 'image/png',
 				srs: 4326,
-				minZoom: 12,
+				minZoom: 14,
 				maxZoom: 21,
 				tiled: false,	
 				//tileSize: 512
