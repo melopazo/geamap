@@ -125,21 +125,21 @@
   
 // Ortofoto -------------------------------------------------------------------------------------------------------
       
-  		var capaOrtoActualA = L.tileLayer.wms("https://www.ign.es/wms-c/PNOA/PNOA?", {
-			layers: 'PNOA',
-			format: 'image/jpeg',
-			transparent: true,
-          	maxZoom: 22, 			
-			attribution: "Ortofotos PNOA máxima actualidad"
-		});        
-		
-  		var capaOrtoActualB = L.tileLayer.wms("https://www.ign.es/wms-c/PNOA/PNOA?", {
-			layers: 'PNOA',
-			format: 'image/jpeg',
-			transparent: true,
-          	maxZoom: 22, 			
-			attribution: "Ortofotos PNOA máxima actualidad"
-		});  		
+		var capaOrtoActualA = L.tileLayer('https://www.ign.es/wmts/pnoa-ma?layer=OI.OrthoimageCoverage&style=default&tilematrixset=GoogleMapsCompatible&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/jpeg&&TileMatrix={z}&TileCol={x}&TileRow={y}', {
+			maxZoom: 22,
+			minZoom: 1,
+		    scheme: 'xyz',       			
+			continuousWorld: true,
+    		attribution: "© IGN PNOA"
+    	});	    	
+
+		var capaOrtoActualB = L.tileLayer('https://www.ign.es/wmts/pnoa-ma?layer=OI.OrthoimageCoverage&style=default&tilematrixset=GoogleMapsCompatible&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image/jpeg&&TileMatrix={z}&TileCol={x}&TileRow={y}', {
+			maxZoom: 22,
+			minZoom: 1,
+		    scheme: 'xyz',       			
+			continuousWorld: true,
+    		attribution: "© IGN PNOA"
+    	});	      		
 		
 // Topográfico IGN --------------------------------------------------------------------------------------------------------
  
